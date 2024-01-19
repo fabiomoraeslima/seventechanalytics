@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7TechAnalytics</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
+</head>
+<body>
+    <div id="area-cabecalho">
+        <div id="area-logo">
+            <h1>Seven<span class="branco">TechAnalytics</span></h1>
+        </div>   
+        <div id="area-menu">
+            <a href="{{ url_for('principal') }}">Home</a>
+            <a href="{{ url_for('databricks') }}">Databricks</a>
+			<a href="{{ url_for('pyspark') }}">PySpark</a>
+            <a href="{{ url_for('sql') }}">SQL</a>
+            <a href="{{ url_for('python') }}">Python</a>
+            <a href="{{ url_for('linguagemweb') }}">Desenvolvimento Web</a>         
+        </div>
+    </div>
+    {% block conteudo %}
+    {% endblock conteudo %}
+<body>
+</html>

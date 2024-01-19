@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% block conteudo %}
+    <div id="area-principal">
+        <div id="area-postagens">
+
+            <!-- abertura postagem-->
+            <div class = "postagem">
+                <h2> O QUE É PYTHON-FLASK ?</h2>
+                <span class="data-postagem"> Postado em 19 de janeiro de 2024 </span>
+                <video alt="Animação" width="620px" autoplay muted loop>
+                    <source src="{{ url_for('static', filename='videos/Novo projeto.mp4') }}" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <br>
+                <p> <b>Você sabe o que é Flask?</b> <br>
+                    O Flask é um framework de desenvolvimento 
+                    web no Python conhecido por sua simplicidade e flexibilidade. <br>
+                    Com ele, é possível criar sites, aplicativos web e APIs de forma rápida 
+                    e eficiente. Sua abordagem “one drop at a time” permite adicionar funcionalidades 
+                    gradualmente, o que o torna uma escolha popular tanto para iniciantes quanto para 
+                    desenvolvedores experientes. <br>
+                    Se você busca uma solução ágil e poderosa para o desenvolvimento web, 
+                    o Flask no Python pode ser a escolha ideal!
+                    </p>
+                <a href="">Leia mais</a>
+            </div> <!-- fechamento da postagem -->
+
+            <!-- abertura postagem-->
+            <div class = "postagem">
+                <h2>Chatbots e Assistentes virtuais</h2>
+                <span class="data-postagem"> Postado em 10 de março de 2022 </span>
+                <img src="{{ url_for('static', filename='images/imagem2.jpg') }}" alt="Imagem" width="620px">
+                <p> <b>Nova era de interação com Inteligência Artificial</b> <br>
+                    Quem não se lembra de quando a única maneira de “conversar” com computadores era 
+                    com comandos de texto simples?! Pois bem, essa interação está de volta, 
+                    mas de um jeito muito mais interessante e amigável, e isso se deve graças 
+                    à Inteligência Artificial (IA). <br>
+                    Nesse artigo, vamos explorar como o Design de Interfaces de Conversação 
+                    está aperfeiçoando a experiência do usuário e fazendo com que nossas 
+                    conversas com as máquinas e chatbots sejam as mais próximas possíveis 
+                    de um diálogo humano, e também mais eficazes
+                    </p>
+                <a href="">Leia mais</a>
+            </div> <!-- fechamento da postagem -->
+
+        </div>
+        <div id="area-lateral">
+
+            <div class="conteudo-lateral">
+                <h3>Postagens Recentes</h3>
+
+                    <div class = "postagem-lateral">
+                        <p class="texto-lateral">O Flask é um framework de desenvolvimento 
+                            web no Python conhecido por sua simplicidade e flexibilidade.</p>
+                        <a href="">Leia mais</a>
+                    </div>
+
+                    <div class = "postagem-lateral" style="border-bottom: none;">
+                        <p class="texto-lateral">Quem não se lembra de quando a única maneira 
+                            de “conversar” com computadores era com comandos de texto simples?!.</p>
+                        <a href="">Leia mais</a>
+                    </div>
+            </div>
+            <div class="conteudo-lateral">
+                <h3>Categorias</h3>
+                <a href="">Databricks</a><br>
+				<a href="">PySpark</a><br>
+                <a href="">SQL</a><br>
+                <a href="">Python</a><br>
+                <a href="">Desenvolvimento Web</a><br>
+            </div>
+
+        </div>
+        <div id="rodape">
+            Todos os direitos reservados
+        </div>
+    </div>
+    {% endblock conteudo %}
+</body>
+</html>
